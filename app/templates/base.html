@@ -1,0 +1,61 @@
+<html>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel = "stylesheet" href ='{{url_for("static", filename = "edit_process_links.css")}}' type = "text/css">
+    <link rel = "stylesheet" href ='{{url_for("static", filename = "dropdown.css")}}' type = "text/css">
+
+    <head>
+        {% if title %}
+        <title>{{ title }} - microblog</title>
+        {% else %}
+        <title>microblog</title>
+        {% endif %}
+    </head>
+    <body>
+        <div>
+            ManageNets
+            <a href="{{ url_for('index') }}">Home</a>
+            {% if current_user.is_anonymous %}
+            <a href="{{ url_for('login') }}">Login</a>
+            {% else %}
+            <a href="{{ url_for('user', username=current_user.username) }}">Profile</a>
+            <a href="{{ url_for('logout') }}">Logout</a>
+
+            <div class="dropdown">
+                <button class="dropbtn">Process</button>
+                    <div class="dropdown-content">
+                        <a href="{{ url_for('create_process') }}">Create process</a>
+                        <a href="{{ url_for('all_processes') }}">All processes</a>
+                        <a href="{{ url_for('my_processes') }}">My processs</a>
+                        <a href="{{ url_for('search_processes') }}">Search processes</a>
+                    </div>
+            </div>
+
+            <div class="dropdown">
+              <button class="dropbtn">Product</button>
+              <div class="dropdown-content">
+                <a href="{{ url_for('create_product') }}">Create product</a>
+                <a href="{{ url_for('all_products') }}">All products</a>
+                <a href="{{ url_for('my_products') }}">My products</a>
+                <a href="{{ url_for('search_products') }}">Search products</a>
+              </div>
+            </div>
+
+            {% endif %}
+        </div>
+
+        <hr>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+        {% block content %}{% endblock %}
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
+</html>
