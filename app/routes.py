@@ -4,7 +4,7 @@ import time
 import json
 
 from flask import request, render_template, flash, redirect, url_for, session, jsonify
-from werkzeug import secure_filename
+from werkzeug.utils import secure_filename
 from werkzeug.urls import url_parse
 from flask_login import current_user, login_user, logout_user, login_required
 from sqlalchemy import or_
