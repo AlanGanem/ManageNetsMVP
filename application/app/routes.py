@@ -169,7 +169,7 @@ def process(process_id):
 def edit_process_info(process_id):
     process_obj = Process.query.filter_by(process_id=process_id).first_or_404()
     form = EditProcessForm(obj=process_obj)
-
+    form.submit.label.text = 'Save'
     if request.method == 'POST':
         # edit info
         if request.form['form_name'] == 'Edit Links':
@@ -194,6 +194,7 @@ def edit_product_info(product_id):
     product_obj = Product.query.filter_by(product_id=product_id).first_or_404()
     flash(product_obj)
     form = EditProductForm(obj=product_obj)
+    form.submit.label.text = 'Save'
 
     if request.method == 'POST':
         # edit info

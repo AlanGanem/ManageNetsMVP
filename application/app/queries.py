@@ -220,9 +220,7 @@ class Inputer:
                 has_another_generating_process = former_outputs[former_outputs['process_id'] != process_id]
             else:
                 has_another_generating_process = pd.DataFrame(None)
-            print(has_another_generating_process)
             if has_another_generating_process.any().any():
-                print('nok')
                 return f'products are already outputs of other process:\n{set(has_another_generating_process["product_id"])}'
         #deprecate old
         query_deprecate_process_links(process_id, datetime.utcnow())
