@@ -1,10 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <form method = "post">
-        <input type="submit" name="form_name" class = "btn btn-default" value = "Edit Links">
-    </form>
+    
     <h1>Edit process "{{ process_id }}" Info</h1>
+    <form method = "post">
+        <input type="submit" name="form_name" class = "btn btn-warning" value = "Edit Links">
+    </form>
     <!--attributes form-->
     <form action="" method="post" novalidate>
         <input type="hidden" name="form_name" value="save_changes">
