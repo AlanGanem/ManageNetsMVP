@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>All Processes</h1>
+        <table class = "table table-striped">
+            <tr>
+                <th>Process ID</th>
+                <th>Process Name</th>
+                <th>Process Owner</th>
+                <th>Process Author</th>
+            </tr>
+            {% for process in processes %}
+
+                <tr>
+                    <th><a href="process/{{process.process_id}}">{{process.process_id}}</a></th>
+                    <td>{{process.name}}</td>
+                    <td>{{process.owner}}</td>
+                    <td>{{process.created_by}}</td>
+            {% endfor %}
+            <tr/>
+        <table/>
+
+{% endblock %}

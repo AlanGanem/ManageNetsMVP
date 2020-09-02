@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1> My Products</h1>
+        <table class = "table table-striped">
+            <tr>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Product Owner</th>
+                <th>Product Author</th>
+                <th>Last modified</th>
+                <th></th>
+                <th></th>
+            </tr>
+            {% for product in products %}
+                <tr>
+                    <td><a href="product/{{product.product_id}}">{{product.product_id}}</a></td>
+                    <td>{{product.name}}</td>
+                    <td>{{product.owner}}</td>
+                    <td>{{product.created_by}}</td>
+                    <td>{{product.creation_date.split('.')[0]}}</td>
+                    <td><button type="button" class="btn btn-primary btn-sm"><a href="edit_product/{{product.product_id}}" class="btn btn-deafult pullright">Edit</a></button></td>
+                    <td>
+                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+                            <a href="#" class="btn danger pullright">
+                                Delete
+                            </a>
+                        </button>
+                    </td>
+                    <td><a href="#" class="btn danger pullright">Delete</a></td>
+            {% endfor %}
+            <tr/>
+
+        <table/>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
