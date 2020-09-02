@@ -37,7 +37,7 @@ process and products locally, and by referencing their processes inputs, all the
 # Why such efort to build this network, what is the use of it?
 <br>
 Just as a map of the landscape is impotant for a militar comander, knowing the map of the full process networks empowers
-managers to:
+managers to: \
 * make creative questions
 * run simulations 
 * make use of a huge amount of network analysis tools
