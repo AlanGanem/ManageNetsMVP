@@ -35,7 +35,7 @@ ManageNets tries to address this issue, providing a process network modeling too
 process and products locally, and by referencing their processes inputs, all the network is created in a distributed manner!
 
 # Why such efort to build this network, what is the use of it?
-<br>
+
 Just as a map of the landscape is impotant for a militar comander, knowing the map of the full process networks empowers
 managers to:
  * make creative questions
