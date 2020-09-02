@@ -9,13 +9,12 @@ can be designed for complex systems starting from the operational level towards 
 top down aproax commonly taken.
 
 
-# What's in stake?
+# What's at stake?
 
 ## A delivery system might look like this:
 
 ![operational net](repo_files/NetworkExample-OperationalView.png)
 
-<br>
 Such systems can be intricate and messy, although might display some modularity.
 Governance should somehow reflect these community structures, since managers should be able to 
 address local issues avoiding interefence in other modules.
@@ -24,7 +23,7 @@ address local issues avoiding interefence in other modules.
 ## Governance in other hand tends to look much tider:
 
 ![governance tree](repo_files/NetworkExample-GovernanceView.png)
-<br>
+
 
 ## A Process Netwrok such as the one shown above helps us to optimally map from operational reality to governance!
 
