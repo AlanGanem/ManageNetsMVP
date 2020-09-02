@@ -37,7 +37,15 @@ process and products locally, and by referencing their processes inputs, all the
 # Why such efort to build this network, what is the use of it?
 <br>
 Just as a map of the landscape is impotant for a militar comander, knowing the map of the full process networks empowers
-managers to make creative questions, run simulations, make use of a huge amount of network analysis tools, try different process design patterns and much more.
+managers to:
+- make creative questions
+- run simulations 
+- make use of a huge amount of network analysis tools
+- try different process design patterns
+- much more!
 
-Long sotry short: distiling what once said 19th century logician Augustus de Morgan: representation maters a lot
+Long sotry short: distiling what once said 19th century logician Augustus de Morgan, just before mathematical formalization of logic: representation maters a lot!
+
+<br>
 ![governance tree](repo_files/thrieve_upon_symbols.png)
+<br>
