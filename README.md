@@ -13,7 +13,7 @@ top down aproax commonly taken.
 
 ## A delivery system might look like this:
 
-![manage net](repo_files/NetworkExample-OperationalView.png)
+![operational net](repo_files/NetworkExample-OperationalView.png)
 
 <br>
 Such systems can be intricate and messy, although might display some modularity.
@@ -28,7 +28,7 @@ address local issues avoiding interefence in other modules.
 
 ## A Process Netwrok such as the one shown above helps us to optimally map from operational reality to governance!
 
-![governance tree](repo_files/NetworkExample-ManageNet.png)
+![manage net](repo_files/NetworkExample-ManageNet.png)
 
 # Creating such network representation is costly, why not distribute then?
 ManageNets tries to address this issue, providing a process network modeling tool, in which employees and managers can create their
@@ -45,7 +45,9 @@ managers to:
  * try different process design patterns
  * much more!
 
-Long sotry short: distiling what once said 19th century logician Augustus de Morgan, just before mathematical formalization of logic: representation maters a lot!
+# Long sotry short
+
+distiling what once said 19th century logician Augustus de Morgan, just before mathematical formalization of logic: representation maters a lot!
 
 <br>
 ![de morgan](repo_files/thrieve_upon_symbols.png)
