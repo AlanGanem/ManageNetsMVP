@@ -48,5 +48,4 @@ managers to:
 Long sotry short: distiling what once said 19th century logician Augustus de Morgan, just before mathematical formalization of logic: representation maters a lot!
 
 <br>
-![governance tree](repo_files/thrieve_upon_symbols.png)
-<br>
+![de morgan](repo_files/thrieve_upon_symbols.png)
