@@ -31,7 +31,7 @@ address local issues avoiding interefence in other modules.
 
 # Creating such network representation is costly, why not distribute then?
 ManageNets tries to address this issue, providing a process network modeling tool, in which employees and managers can create their
-process and products locally, and by referencing their processes inputs, all the network is created in a distributed manner!
+process and products representations locally, and by referencing their processes inputs, all the network is created in a distributed manner!
 
 # Why such efort to build this network, what is the use of it?
 
